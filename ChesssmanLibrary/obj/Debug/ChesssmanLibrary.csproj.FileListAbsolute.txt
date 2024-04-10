@@ -1,0 +1,7 @@
+F:\NetCoreRESTful\C#象棋完整版\5-21\bin\Debug\5-21.exe.config
+F:\NetCoreRESTful\C#象棋完整版\5-21\bin\Debug\5-21.exe
+F:\NetCoreRESTful\C#象棋完整版\5-21\bin\Debug\5-21.pdb
+F:\NetCoreRESTful\C#象棋完整版\5-21\obj\Debug\ChesssmanLibrary.csproj.AssemblyReference.cache
+F:\NetCoreRESTful\C#象棋完整版\5-21\obj\Debug\ChesssmanLibrary.csproj.CoreCompileInputs.cache
+F:\NetCoreRESTful\C#象棋完整版\5-21\obj\Debug\5-21.exe
+F:\NetCoreRESTful\C#象棋完整版\5-21\obj\Debug\5-21.pdb

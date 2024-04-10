@@ -1,0 +1,35 @@
+﻿<Window x:Class="MyGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyGame"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow"
+        Title="MainWindow" Height="620" Width="525.5" Loaded="Window_Loaded" >
+    <StackPanel Margin="0,0,2,0">
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="BtnStart" Width="200" Click="BtnStart_Click">开始游戏</Button>
+            <Button x:Name="BtnStar" Width="200" Click="BtnStar_Click">重新开始</Button>
+            <Button x:Name="BtnEsc" Width="117" Click="BtnEsc_Click">退出</Button>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Canvas>
+                <Image x:Name="imgGame" MouseDown="imgGame_MouseDown"></Image>
+                <Image x:Name="Fimg" Source="G:\项目\5-21\MyGame\bin\Debug\images\下棋.jpg" Height="576" Width="322" Stretch="Uniform"/>
+                <Image x:Name="Fimg1" Source="G:\项目\5-21\MyGame\bin\Debug\images\下棋1.jpg" Height="576" Width="196" Stretch="Fill" Canvas.Left="322"/>
+                <TextBox x:Name="HouText" Height="37" Width="98" TextWrapping="Wrap" Text="黑方走" RenderTransformOrigin="1.458,1.295" Canvas.Left="571" Canvas.Top="25" BorderBrush="{x:Null}" BorderThickness="0" FontSize="30" FontFamily="隶书"/>
+                <TextBox x:Name="ZouText" Height="37" Width="94" TextWrapping="Wrap" Text="红方走" RenderTransformOrigin="1.458,1.295" Canvas.Left="756" Canvas.Top="25" BorderBrush="{x:Null}" BorderThickness="0" FontSize="30" FontFamily="隶书" Foreground="Red"/>
+                <Image x:Name="Himg" Source="G:\项目\5-21\MyGame\bin\Debug\images\龙1.jpg" Width="144" Height="210" Canvas.Left="549" Canvas.Top="77"></Image>
+                <Image x:Name="iHmg" Source="G:\项目\5-21\MyGame\bin\Debug\images\龙2.jpg" Width="144" Height="206" Canvas.Left="735" Canvas.Top="81" ></Image>
+                <TextBox Text="棋子数量" Canvas.Left="549" Canvas.Top="325" Height="39" Width="144" BorderBrush="{x:Null}" BorderThickness="0" FontSize="35" FontFamily="隶书"></TextBox>
+                <TextBox Text="棋子数量" Canvas.Left="735" Canvas.Top="325" Height="39" Width="144" BorderBrush="{x:Null}" BorderThickness="0" FontSize="35" FontFamily="隶书" Foreground="Red"></TextBox>
+                <Image Source="G:\项目\5-21\MyGame\bin\Debug\images\火.png" Canvas.Left="549" Canvas.Top="369" Height="180" Width="144"></Image>
+                <Image Source="G:\项目\5-21\MyGame\bin\Debug\images\火.png" Canvas.Left="735" Canvas.Top="369" Height="180" Width="144"></Image>
+                <TextBox x:Name="SyuHong"  Canvas.Left="760" Canvas.Top="455" Height="77" Width="90" BorderBrush="{x:Null}" BorderThickness="0" FontSize="75" FontFamily="隶书" Foreground="Red"></TextBox>
+                <TextBox x:Name="SyuHei"  Canvas.Left="571" Canvas.Top="449" Height="77" Width="90" BorderBrush="{x:Null}" BorderThickness="0" FontSize="75" FontFamily="隶书" ></TextBox>
+            </Canvas>
+        </StackPanel>
+    </StackPanel>
+</Window>
